@@ -1,8 +1,8 @@
-import { CodeBlock, dracula } from "react-code-blocks";
+import { CopyBlock, dracula } from "react-code-blocks";
 
 const Code = ({ code, language, showLineNumbers }) => {
     return (
-        <CodeBlock
+        <CopyBlock
             text={code}
             language={language}
             showLineNumbers={showLineNumbers}
