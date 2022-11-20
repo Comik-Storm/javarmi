@@ -1,5 +1,4 @@
 import Code from './components/Code'
-import Navbar from "./components/Navbar";
 
 const rmi = {
     'server_interface': 'import java.rmi.*;\n import java.io.IOException;\n\npublic interface SearchIntf extends Remote {\n\tpublic int search (String file, String key) throws RemoteException, IOException;\n}',
