@@ -20,7 +20,6 @@ const socket = {
 function App() {
     return (
         <div className="App">
-            <Navbar />
             <h1 id="rmi" className="text-center">Java RMI</h1>
             <h2 className="text-primary">Server Interface</h2>
             <Code code={rmi.server_interface}
