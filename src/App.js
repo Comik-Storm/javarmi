@@ -17,8 +17,8 @@ function App() {
                   language='java'
                   showLineNumbers={true} />
             <br/>
-            <h2 className="text-primary">Server Interface</h2>
-            <Code code={code.server_interface}
+            <h2 className="text-primary">Server Implementation</h2>
+            <Code code={code.server_implementation}
                   language='java'
                   showLineNumbers={true} />
             <br/>
