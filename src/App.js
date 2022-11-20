@@ -1,4 +1,5 @@
 import Code from './components/Code'
+import Navbar from "./components/Navbar";
 
 const rmi = {
     'server_interface': 'import java.rmi.*;\n import java.io.IOException;\n\npublic interface SearchIntf extends Remote {\n\tpublic int search (String file, String key) throws RemoteException, IOException;\n}',
@@ -19,7 +20,8 @@ const socket = {
 function App() {
     return (
         <div className="App">
-            <h1 className="text-center">Java RMI</h1>
+            <Navbar />
+            <h1 id="rmi" className="text-center">Java RMI</h1>
             <h2 className="text-primary">Server Interface</h2>
             <Code code={rmi.server_interface}
                   language='java'
@@ -45,7 +47,7 @@ function App() {
                   language='bash'
                   showLineNumbers={true} />
             <br/><br/><hr/><br/><br/>
-            <h1 className="text-center">Java Socket Programming: MultiClient Chat</h1>
+            <h1 id="multi" className="text-center">Java Socket Programming: MultiClient Chat</h1>
             <h2 className="text-primary">ChatClient.java</h2>
             <Code code={socket.chat_client}
                   language='java'
